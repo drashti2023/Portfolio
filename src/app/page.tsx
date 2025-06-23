@@ -1,95 +1,55 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import "./globals.css";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <section id="home" className="home section dark-background" style={{ position: "relative" }}>
+      <Image
+        src="/assets/img/photo.jpg"
+        alt="Drashti Rathod"
+        width={300}
+        height={300}
+      />
+      <div className="container">
+        <h2>Drashti Rathod</h2>
+        <p>
+          <span className="typing-text">
+            I'm Full Stack Developer and CyberSecurity Enthusiast
+          </span>
+        </p>
+      </div>
+      
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      {/* Download Resume Button fixed at top right */}
+      {/* <a
+        href="/assets/myresume.pdf"
+        download
+        style={{
+          position: "fixed",
+          top: "20px",
+          right: "20px",
+          backgroundColor: "#000",
+          color: "#fff",
+          padding: "12px 24px",
+          borderRadius: "30px",
+          textDecoration: "none",
+          fontWeight: "600",
+          boxShadow: "0 4px 6px rgba(0,0,0,0.3)",
+          transition: "background-color 0.3s ease",
+          zIndex: 1000,
+        }}
+       
+      >
+        Download Resume
+      </a> */}
+      <a
+  href="/assets/myresume.pdf"
+  download
+  className="resume-btn"
+>
+  Download Resume
+</a>
+
+    </section>
   );
 }
