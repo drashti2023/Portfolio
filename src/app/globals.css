@@ -43,17 +43,18 @@ html {
 /* Typing Effect */
 .typing-text {
   display: inline-block;
-  white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid #fff;       /* Cursor */
+  border-right: 3px solid #fff; /* Cursor */
+  white-space: nowrap;
   font-family: monospace, monospace;
   font-size: 1.5rem;
-  animation: 
-    typing 4s steps(60, end) forwards, /* typing animation */
-    blink 0.75s step-end infinite;     /* blinking cursor */
   max-width: 0;
+  animation: 
+    typing 4s steps(60, end) forwards, 
+    blink 0.75s step-end infinite;
 }
 
+/* Resume Button */
 .resume-btn {
   position: fixed;
   top: 20px;
@@ -69,17 +70,17 @@ html {
   z-index: 1000;
 }
 
-/* Typing animation: expand max-width from 0 to full */
+/* Typing animation */
 @keyframes typing {
   from {
     max-width: 0;
   }
   to {
-    max-width: 60ch;  /* matches steps */
+    max-width: 60ch;
   }
 }
 
-/* Cursor blinking */
+/* Blinking cursor animation */
 @keyframes blink {
   50% {
     border-color: transparent;
@@ -89,19 +90,20 @@ html {
 /* Responsive for smaller screens */
 @media (max-width: 576px) {
   .home img {
-    content: url('/assets/img/photo2.jpg'); /* Use a different image */
+    content: url('/assets/img/photo3.jpg');
     object-fit: cover;
     height: 100vh;
   }
+
   .resume-btn {
     top: auto;
     bottom: 20px;
     right: 50%;
     transform: translateX(50%);
   }
+
   .typing-text {
-    font-size: 1.2rem;
-    animation: typing 4s steps(60, end) forwards, blink 0.75s step-end infinite;
+    font-size: 1.2rem; /* smaller font on mobile */
+    /* white-space stays nowrap to preserve typing effect */
   }
 }
-

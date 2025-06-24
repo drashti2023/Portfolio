@@ -10,7 +10,7 @@ function Header() {
       <img src="/assets/img/my-profile-img.jpg" alt="" className="img-fluid rounded-circle"/>
     </div>
 
-    <a href="index.html" className="logo d-flex align-items-center justify-content-center">
+    <a href="/" className="logo d-flex align-items-center justify-content-center text-decoration-none text-dark">
       {/* <img src="/assets/img/logo.png" alt=""/>  */}
       <h1 className="sitename">Drashti Rathod</h1>
     </a>
@@ -26,22 +26,22 @@ function Header() {
     <nav id="navmenu" className="navmenu">
       <ul>
         <li>
-          <Link href="/" >
+          <Link href="/" className="text-decoration-none">
             <i className="bi bi-house navicon"></i> Home
           </Link>
         </li>
         <li>
-          <Link href="/about">
+          <Link href="/about" className="text-decoration-none">
             <i className="bi bi-person navicon"></i> About
           </Link>
         </li>
         <li>
-          <Link href="/resume">
+          <Link href="/resume" className="text-decoration-none">
             <i className="bi bi-file-earmark-text navicon"></i> Resume
           </Link>
         </li>
         <li>
-          <Link href="/projects">
+          <Link href="/projects" className="text-decoration-none">
             <i className="bi bi-grid navicon"></i> Projects
           </Link>
         </li>
@@ -51,7 +51,7 @@ function Header() {
           </Link>
         </li> */}
         <li>
-          <Link href="/contact">
+          <Link href="/contact" className="text-decoration-none">
             <i className="bi bi-envelope navicon"></i> Contact
           </Link>
         </li>
