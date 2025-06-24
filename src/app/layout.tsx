@@ -1,18 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-//import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Script from 'next/script';
+import Head from "next/head";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import '../styles/main.css';
+import 'aos/dist/aos.css';
+import 'bootstrap-icons/font/bootstrap-icons.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'glightbox/dist/css/glightbox.min.css'; 
 
 export const metadata: Metadata = {
   title: "Portfolio | Drashti Rathod",
@@ -26,13 +22,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <head>
+        <Head>
   <meta charSet="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>Portfolio | Drashti Rathod</title>
   <meta content="" name="description"/>
   <meta content="" name="keywords"/>
 
+  <link rel="stylesheet" href="/assets/css/main.css" />
   {/* <!-- Favicons --> */}
   <link href="/assets/img/favicon.png" rel="icon"/>
   <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
@@ -42,17 +39,8 @@ export default function RootLayout({
   <link href="https://fonts.gstatic.com" rel="preconnect" crossOrigin="anonymous"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
 
-  {/* <!-- Vendor CSS Files --> */}
-  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-  <link href="/assets/vendor/aos/aos.css" rel="stylesheet"/>
-  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
-  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 
-  {/* <!-- Main CSS File --> */}
-  <link href="/assets/css/main.css" rel="stylesheet"/>
-
-</head>
+</Head>
 
 
 
@@ -63,36 +51,24 @@ export default function RootLayout({
           {children}
         </main>
 
-  {/* Scroll Top Button
-      <a
-        href="#"
-        id="scroll-top"
-        className="scroll-top d-flex align-items-center justify-content-center"
-      >
-        <i className="bi bi-arrow-up-short"></i>
-      </a>
-
-      {/* Preloader 
-      <div id="preloader"></div> */}
   
   <Footer />
 
-      {/* Load external scripts with Next.js Script component */}
-      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/vendor/php-email-form/validate.js"></script>
-      <script src="assets/vendor/aos/aos.js"></script>
-      <script src="assets/vendor/typed.js/typed.umd.js"></script>
-      <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-      <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-      <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <Script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"/>
+      <Script src="assets/vendor/php-email-form/validate.js"/>
+      <Script src="assets/vendor/aos/aos.js"/>
+      <Script src="assets/vendor/typed.js/typed.umd.js"/>
+      <Script src="assets/vendor/purecounter/purecounter_vanilla.js"/>
+      <Script src="assets/vendor/waypoints/noframework.waypoints.js"/>
+      <Script src="assets/vendor/glightbox/js/glightbox.min.js"/>
+      <Script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"/>
+      <Script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"/>
+      <Script src="assets/vendor/swiper/swiper-bundle.min.js"/>
 
       {/* Your main JS file */}
-      <script src="assets/js/main.js"></script>    
+      <Script src="assets/js/main.js"/>   
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossOrigin="anonymous"></script>
+<Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossOrigin="anonymous"/>
       </body>
     </html>
   );

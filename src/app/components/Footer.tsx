@@ -7,8 +7,8 @@ function Footer() {
     <div className="container">
       <div className="copyright text-center ">
         <p>© <span>2025|</span> 
-        <strong className="px-1 sitename">Drashti Rathod|</strong> 
-        <span>All Rights Reserved.</span></p>
+        <strong className="px-1 sitename">Drashti Rathod</strong> 
+        <span>|All Rights Reserved.</span></p>
       </div>
       
     </div>

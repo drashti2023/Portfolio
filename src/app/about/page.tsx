@@ -9,7 +9,7 @@ function about() {
      
       <div className="container section-title" >
         <h2>About</h2>
-        <p>I’m a dedicated Full Stack Developer and Computer Science undergraduate with a strong passion for cybersecurity. I love building dynamic web applications from front to back, and I'm always exploring the world of ethical hacking, secure development practices, and digital defense strategies. Whether it’s crafting a clean UI or securing a backend API, I enjoy solving problems through code and continuously learning new technologies.
+        <p>I am a dedicated Full Stack Developer and Computer Science undergraduate with a strong passion for cybersecurity. I love building dynamic web applications from front to back, and I am always exploring the world of ethical hacking, secure development practices, and digital defense strategies. Whether it is crafting a clean UI or securing a backend API, I enjoy solving problems through code and continuously learning new technologies.
        </p>
       </div>
 
@@ -43,8 +43,8 @@ function about() {
               </div>
             </div>
             <p className="py-3">
-              I believe technology should be powerful, efficient, and secure. I’m currently honing my skills in full stack
-              development and diving deeper into ethical hacking and cybersecurity tools. I’m open to freelance work,
+              I believe technology should be powerful, efficient, and secure. I am currently honing my skills in full stack
+              development and diving deeper into ethical hacking and cybersecurity tools. I am open to freelance work,
               collaborations, or any opportunities that allow me to grow as a developer and cybersecurity professional.
            </p>
           </div>

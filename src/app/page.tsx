@@ -14,7 +14,7 @@ export default function HomePage() {
         <h2>Drashti Rathod</h2>
         <p>
           <span className="typing-text">
-            I'm Full Stack Developer and CyberSecurity Enthusiast
+            I am Full Stack Developer and CyberSecurity Enthusiast
           </span>
         </p>
       </div>

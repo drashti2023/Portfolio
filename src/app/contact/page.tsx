@@ -8,7 +8,7 @@ function contact() {
       
       <div className="container section-title" >
         <h2>Contact</h2>
-        <p>I’m a passionate developer always eager to collaborate and learn. 
+        <p>I am a passionate developer always eager to collaborate and learn. 
           Reach out if you want to chat about projects, code, or tech!</p>
       </div>
 
