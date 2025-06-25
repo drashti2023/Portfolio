@@ -50,13 +50,12 @@ function contact() {
                 </div>
               </div>
 
-              {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4190.037929581105!2d70.78883289747095!3d22.248768309570785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c98ac71cdf0f%3A0x76dd15cfbe93ad3b!2sRajkot%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1749402943185!5m2!1sen!2sin" style={{border:0, width: '100%', height: '270px',}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe> */}
             </div>
           </div>
 
           <div className="col-lg-7">
             <form
-              action="https://formsubmit.co/drworkspace23@gmail.com"
+              action="https://formsubmit.co/drashtirathod77@gmail.com"
               method="POST"
               className="php-email-form"
             >

@@ -10,16 +10,15 @@ function Header() {
       <img src="/assets/img/my-profile-img.jpg" alt="" className="img-fluid rounded-circle"/>
     </div>
 
-    <a href="/" className="logo d-flex align-items-center justify-content-center text-decoration-none text-dark">
+    <Link href="/" className="logo d-flex align-items-center justify-content-center text-decoration-none text-dark">
       {/* <img src="/assets/img/logo.png" alt=""/>  */}
       <h1 className="sitename">Drashti Rathod</h1>
-    </a>
+    </Link>
 
     <div className="social-links text-center">
-      <a href="https://www.instagram.com/drashtirathod._" className="instagram"><i className="bi bi-instagram"></i></a>
-      <a href="https://linkedin.com/in/drashti-rathod-4559112b3" className="linkedin"><i className="bi bi-linkedin"></i></a>
-      <a href="https://github.com/drashti2023" className="github"><i className="bi bi-github"></i></a> 
-
+      <Link href="https://www.instagram.com/drashtirathod._" className="instagram"><i className="bi bi-instagram"></i></Link>
+      <Link href="https://linkedin.com/in/drashti-rathod-4559112b3" className="linkedin"><i className="bi bi-linkedin"></i></Link>
+      <Link href="https://github.com/drashti2023" className="github"><i className="bi bi-github"></i></Link> 
 
     </div>
 
