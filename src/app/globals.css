@@ -93,6 +93,8 @@ html {
     content: url('/assets/img/photo3.jpg');
     object-fit: cover;
     height: 100vh;
+    width: 100%;
+    opacity: 0.2;
   }
 
   .resume-btn {
