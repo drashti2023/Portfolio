@@ -90,7 +90,7 @@ html {
 /* Responsive for smaller screens */
 @media (max-width: 576px) {
   .home img {
-    content: url('/assets/img/photo3.jpg');
+    content: url('/assets/img/photo4.jpg');
     object-fit: cover;
     height: 100vh;
     width: 100%;
